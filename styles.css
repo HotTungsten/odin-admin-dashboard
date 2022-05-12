@@ -119,20 +119,33 @@ ul {
     display: grid;
     grid-template-columns: 6fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 40px 20px;
 }
 
 .projects-title, .announcements-head, .trending-title {
     color: #EDF2EF;
+    font-weight: bold;
+    font-size: 20px;
 }
-.projects-section {
+
+.projects-title {
+    margin-bottom: 20px;
+}
+
+.project-main {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
     gap: 20px;
 }
 
+
+
 .project-section {
     background-color: white;
+    height: 200px;
 }
 
 .announcements-section {
@@ -156,4 +169,8 @@ ul {
     align-items: center;
     gap: 20px;
     padding: 15px;
+}
+
+.trending-title {
+    margin-bottom: 20px;
 }
